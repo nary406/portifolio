@@ -1,9 +1,5 @@
 import styled from "styled-components"
-// /#1FAOFF
 
-// #12DAFB
-
-// #A7FDCC/ 
 export const  Image=styled.img`
    width:50px;
    height:50px;
