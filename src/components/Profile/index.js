@@ -1,5 +1,5 @@
-// ProfileSection.js
-import {Image, Profile}from "./styledComponents"
+
+import { Profile}from "./styledComponents"
 
 import "./index.css"
 import React from 'react';
