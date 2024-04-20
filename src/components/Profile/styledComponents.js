@@ -10,7 +10,7 @@ export const  Image=styled.img`
 `
 export  const  Profile=styled.div`
 display:flex;
-   flex-direction:${props=>(props.display)};
+   flex-direction:row;
    justify-content:space-between;
    align-items:center;
    width:100%;
@@ -27,11 +27,11 @@ z-index:1;
     display:${props=>(props.ham?"flex":"flex")};
     flex-direction:column;
     margin-left:0px;
-    justify-content:space-between;
+    justify-content:flex-start;
     padding:30px 0px 0px 0px;
 
     width:100%;
-    height:130vh;
+    height:150vh;
     align-items:center;
    }
 `
