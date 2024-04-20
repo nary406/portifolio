@@ -19,10 +19,10 @@ const hamburger=()=>(
 
    </Imagdiv>
     <Display display="row" ham={ham} as="ul">
-      <li><Button>profile</Button></li>
-      <li><Button>skills</Button></li>
-      <li><Button>projects</Button></li>
-      <li><Button>contacts</Button></li>
+      <li><Button className="hvr">profile</Button></li>
+      <li><Button className="hvr">skills</Button></li>
+      <li><Button className="hvr">projects</Button></li>
+      <li><Button className="hvr">contacts</Button></li>
     </Display>
 
 

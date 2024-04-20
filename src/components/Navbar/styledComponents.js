@@ -30,12 +30,14 @@ export  const  Nav=styled.div`
    flex-direction:row;
    justify-content:space-around;
    align-items:center;
-   width:100p%;
+   width:100%;
    height:60px;
    color:white;
    padding-right:20px;
    padding-left:40px;
    margin:0px;
+   z-index:2;
+   position:fixed;
    background-color: #8EC5FC;
 background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
@@ -82,11 +84,8 @@ background:transparent;
 padding:6px;
 font-size:20px;
 color: #045799;
-border-radius:10px;
+
 font-weight:600;
 transition: transform 500ms;
-&:hover{
-   color:white;
-}
 
 ` 

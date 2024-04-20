@@ -5,13 +5,11 @@ import Header from "./components/Navbar"
 
 
 
-
 const App=()=> {
   return (
    <>
    <Header/>
    <Profilesection/>
-
    </>
   )
 }

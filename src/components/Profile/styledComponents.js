@@ -17,8 +17,10 @@ display:flex;
    background-color: #8EC5FC;
 background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 height:100vh;
+
+z-index:1;
    margin:auto;
-   padding:0px 100px 0px 100px;
+   padding:50px 100px 0px 100px;
    
    
    @media (max-width:576px){
@@ -26,10 +28,10 @@ height:100vh;
     flex-direction:column;
     margin-left:0px;
     justify-content:space-between;
-   padding:0px;
+    padding:30px 0px 0px 0px;
 
     width:100%;
-    height:${(props)=>(props.ham&&"260px")};
+    height:130vh;
     align-items:center;
    }
 `
