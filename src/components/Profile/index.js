@@ -1,7 +1,7 @@
 import React, { useState,useEffect} from 'react';
 import { SlCloudDownload } from "react-icons/sl";
 import { Profile } from "./styledComponents";
-import Test from '../test';
+import SocialButtons from '../socialicons';
 import "./index.css";
 import { FaTwitter, FaFacebook, FaGoogle, FaGithub } from "react-icons/fa";
 
@@ -38,7 +38,7 @@ const Profilesection = () => {
 
         
         </div>
-        <Test/>
+        <SocialButtons/>
          </div>
 
       </div>

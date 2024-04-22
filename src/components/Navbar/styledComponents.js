@@ -9,6 +9,8 @@ export const  Btn=styled.button`
   display:none;
   @media (max-width:576px){
    display:block;
+   border:none;
+   background-color:transparent;
    }
 `
 
@@ -38,9 +40,14 @@ export  const  Nav=styled.div`
    margin:0px;
    z-index:2;
    position:fixed;
-   background-color: #8EC5FC;
+  
 background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
+background: rgba( 243, 248, 253, 0.35 );
+   
+    backdrop-filter: blur( 14.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+   
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 
    @media (max-width:576px){
     flex-direction:column;
@@ -59,7 +66,7 @@ display:flex;
    align-items:center;
    width:100%;
    margin:0px;
-
+list-style:none;
    margin-left:auto;
    padding-right:30px;
    @media (max-width:576px){
@@ -84,7 +91,7 @@ background:transparent;
 padding:6px;
 font-size:20px;
 color: #045799;
-
+border:none;
 font-weight:600;
 transition: transform 500ms;
 
