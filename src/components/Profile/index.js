@@ -3,7 +3,6 @@ import { SlCloudDownload } from "react-icons/sl";
 import { Profile } from "./styledComponents";
 import SocialButtons from '../socialicons';
 import "./index.css";
-import { FaTwitter, FaFacebook, FaGoogle, FaGithub } from "react-icons/fa";
 
 const Profilesection = () => {
 

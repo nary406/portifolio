@@ -7,7 +7,7 @@ export const  Image=styled.img`
 `
 export const  Btn=styled.button`
   display:none;
-  @media (max-width:576px){
+  @media  (orientation:portrait){
    display:block;
    border:none;
    background-color:transparent;
@@ -17,7 +17,7 @@ export const  Btn=styled.button`
 export const  Imagdiv=styled.div`
 width:100%;
 
- @media (max-width:576px){
+ @media  (orientation:portrait){
     display:flex;
   flex-direction:row;
   width:100%;
@@ -49,7 +49,7 @@ background: rgba( 243, 248, 253, 0.35 );
    
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
-   @media (max-width:576px){
+   @media (orientation:portrait){
     flex-direction:column;
    justify-content:flex-start;
    align-items:flex-start;
@@ -69,7 +69,7 @@ display:flex;
 list-style:none;
    margin-left:auto;
    padding-right:30px;
-   @media (max-width:576px){
+   @media (orientation:portrait){
     display:flex;
    
     flex-direction:column;

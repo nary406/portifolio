@@ -14,7 +14,7 @@ width:100px;
 border-radius: 20px;
 transition:all 450ms;
 &:hover {
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     transform: scale(1.1) ;
   }
 
