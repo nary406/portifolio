@@ -16,9 +16,8 @@ const Profilesection = () => {
           <span style={{ fontSize: "60px" }}> N</span>
           arendra
         </h2>
-        <br />
-        <br/>
-        <p style={{ fontFamily: "Comfortaa", fontWeight: "900px" }} className="">
+     
+        <p style={{ fontFamily: "Comfortaa", fontWeight: "900px", fontSize:"10px" }}>
           Welcome to my Full Stack Developer portfolio! I specialize in crafting seamless digital experiences from frontend to backend. I build robust, user-friendly web applications. Explore my projects to see how I blend creativity with technical excellence to deliver results that exceed expectations. Let's connect and discuss how we can bring your vision to life..
         </p>
       
