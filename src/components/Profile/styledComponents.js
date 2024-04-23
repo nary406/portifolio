@@ -14,7 +14,7 @@ display:flex;
    justify-content:space-between;
    align-items:center;
    width:100%;
-  height:100dvh;
+  height:100svh;
    background-color: #8EC5FC;
 background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
    
