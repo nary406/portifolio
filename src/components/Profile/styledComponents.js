@@ -25,7 +25,7 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     
     flex-direction:column;
     margin-left:0px;
-    height:130vh;
+    
     padding:30px 0px 0px 0px;
    
    
