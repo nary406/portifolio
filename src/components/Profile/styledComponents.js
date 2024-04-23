@@ -31,7 +31,7 @@ z-index:1;
     padding:30px 0px 0px 0px;
 
     width:100%;
-    height:150vh;
+   
     align-items:center;
    }
 `
