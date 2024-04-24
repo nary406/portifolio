@@ -52,55 +52,47 @@ const two=div.current
 
 gsap.fromTo(one, {x:"-900px", opacity:0 }, {x:"0px", opacity:1, ease:"slow(0.7,0.7,false)",
    scrollTrigger:{
- 
-  start:"top 80%",
-  end:"top 0%",
-  scrub:3,
-  trigger:el,
-  markers:true,
- 
-
-
-}})
+     start:"top 80%",
+     end:"top 0%",
+     scrub:3,
+     trigger:el,
+    
+   }
+});
 
 gsap.fromTo(el, {opacity:0, y:"-90px",}, {y:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
   start:"top 80%",
   end:"top 0%",
-scrub:3,
+  scrub:3,
   trigger:el,
-  markers:true,
- 
- 
-}})
 
-gsap.fromTo(hrl.current, {opacity:0, x:"-190px",}, {x:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
+}});
+
+gsap.fromTo(hrl.current, {opacity:0, x:"-180px",}, {x:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
   start:"top 80%",
   end:"top 0%",
-scrub:3,
+  scrub:3,
   trigger:el,
-  markers:true,
  
- 
-}})
-gsap.fromTo(hrr.current, {opacity:0, x:"190px",}, {x:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
+}});
+
+gsap.fromTo(hrr.current, {opacity:0, x:"180px",}, {x:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
   start:"top 80%",
   end:"top 0%",
-scrub:3,
+  scrub:3,
   trigger:el,
-  markers:true,
  
- 
-}})
+}});
 
  
-gsap.fromTo(two, {opacity:0, x:"900px",}, {x:"0px", opacity:1, ease: "expoScale(0.5,7,none)", 
+gsap.fromTo(two, {opacity:0, x:"900px", }, {x:"0px", opacity:1,  ease: "expoScale(0.5,7,none)", 
 
  scrollTrigger:{
   start:"top 80%",
   end:"top 0%",
 scrub:3,
   trigger:el,
-  markers:true,
+ 
  
  
 }})
@@ -112,12 +104,12 @@ scrub:3,
   return (
 
    <div className="skill_main"   >
-     <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}  > 
+     <div style={{display:"flex", justifyContent:"center", alignItems:"center",}}  > 
       <hr  ref={hrl}/> 
       <h1 style={{fontWeight:"650", marginRight:"20px", marginLeft:"20px"}} ref={element} >skills</h1>
        <hr ref={hrr} />
      </div>
-     <div className='s_main'>
+     <div className='s_main' >
         <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1713725258/undraw_static_assets_rpm6_ejpryd.svg" className="svg_pic" ref={image} />
       <div className="skills_div"  ref={div} >
       

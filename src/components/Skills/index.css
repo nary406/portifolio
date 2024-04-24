@@ -147,7 +147,7 @@ hr{
     .s_main{
         flex-direction:column;
         align-items: center;
-       
+       overflow:hidden;
         padding:50px 20px 20px 20px;
        
     }
@@ -165,11 +165,13 @@ hr{
 @media (orientation:portrait){
     .svg_pic{
        min-width:70%;
+      
        
     }
 }
 
 .skills_div{
+      
     width:45%;
     background: rgba(246, 246, 246, 0.4);
     padding: 0px;
