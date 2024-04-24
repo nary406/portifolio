@@ -1,6 +1,10 @@
-
+import gsap from "gsap"
+import {ScrollTrigger} from "gsap/ScrollTrigger"
 import {SkillBox} from "./styledComponent"
 import "./index.css"
+import {useEffect, useRef} from "react"
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Skills=()=> {
   const frontend=[{name:"HTML", icon:"https://res.cloudinary.com/dky72aehn/image/upload/v1713798519/html_1051277_hrexj2.png", color:"orange" }, 
@@ -27,13 +31,40 @@ const skillsList=(item)=>{
     <img src={icon} className="logo"/>
   </SkillBox>)
 }
+const element=useRef(null)
+
+useEffect(()=>{
+const el=element.current
+
+
+gsap.fromTo(el, {opacity:0}, {opacity:1, duration:1, scrollTrigger:{
+  start:"top 60%",
+  trigger:el,
+  scrub:true,
+  markers:true,
+  toggleClass:{targets:el, className:"slide-in-blurred-bottom"}
+
+}})
+
+
+
+
+})
+
 
     
   return (
-    <div className='s_main'>
+
+   <div className="skill_main" ref={element} >
+     <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}  > 
+      <hr  /> 
+      <h1 style={{fontWeight:"650", marginRight:"20px", marginLeft:"20px"}} >skills</h1>
+       <hr  />
+     </div>
+     <div className='s_main'>
         <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1713725258/undraw_static_assets_rpm6_ejpryd.svg" className="svg_pic"/>
       <div className="skills_div">
-       <h1 style={{fontWeight:"650"}} >skills</h1>
+      
        <div  className="all_skills">
        <div className="each_skill_div">
             <h4 className="category" > FrontEnd :</h4>
@@ -66,6 +97,7 @@ const skillsList=(item)=>{
       
       </div>
     </div>
+   </div>
   )
 }
 

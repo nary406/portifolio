@@ -48,11 +48,12 @@ background: rgba( 243, 248, 253, 0.35 );
     -webkit-backdrop-filter: blur( 10.5px );
    
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+    transition:height 420ms;
    @media (orientation:portrait){
     flex-direction:column;
    justify-content:flex-start;
    align-items:flex-start;
+
    transition:0.3s ease-in-out;
    height:${(props)=>(props.ham&&"250px")};
    }
@@ -68,6 +69,7 @@ display:flex;
    margin:0px;
 list-style:none;
    margin-left:auto;
+   
    padding-right:30px;
    @media (orientation:portrait){
     display:flex;
@@ -79,7 +81,7 @@ list-style:none;
    
     margin-top:20px;
     overflow:hidden;
-   
+   transition:height 420ms;
     height:${(props)=>(props.ham?"160px":"0px")};
     align-items:flex-start;
    }

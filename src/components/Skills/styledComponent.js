@@ -8,9 +8,12 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-right:40px;
-height:100px;
-width:100px;
+margin-right:15px;
+
+min-height:80px;
+min-width:80px;
+max-height:100px;
+max-width:100px;
 border-radius: 20px;
 transition:all 450ms;
 &:hover {
@@ -19,8 +22,7 @@ transition:all 450ms;
   }
 
 @media (orientation:portrait){
-    height:60px;
-width:60px;
+  
 border-radius: 10px;
 margin-bottom:10px;
 padding:10px;

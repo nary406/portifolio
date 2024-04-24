@@ -43,7 +43,7 @@
     transition: 0.3s;
   }
 
-  @media (max-width:578px){
+  @media (orientation:portrait){
     .social-button{
         width: 25px;
         height: 25px;

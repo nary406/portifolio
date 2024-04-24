@@ -10,14 +10,17 @@ const Profilesection = () => {
 
   return (
     <Profile >
-      <div className="profile-description ">
-        <h2 className="tracking-in-expand">
+      <div className="profile-description " data-speed="0.7">
+       <div className="typewriter">
+       <h1 className="tracking-in-expand">
           Hi, I'am
           <span style={{ fontSize: "60px" }}> N</span>
           arendra
-        </h2>
+        </h1>
      
-        <p style={{ fontFamily: "Comfortaa", fontWeight: "900px", fontSize:"10px" }}>
+       </div>
+       <br/>
+        <p style={{ fontFamily: "Comfortaa", fontWeight: "900px", fontSize:"17px" }}>
           Welcome to my Full Stack Developer portfolio! I specialize in crafting seamless digital experiences from frontend to backend. I build robust, user-friendly web applications. Explore my projects to see how I blend creativity with technical excellence to deliver results that exceed expectations. Let's connect and discuss how we can bring your vision to life..
         </p>
       
@@ -40,7 +43,7 @@ const Profilesection = () => {
          </div>
 
       </div>
-      <section className="banner scale-in-center" style={{ height: "500px" }}>
+      <section className="banner scale-in-center" >
         <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1713083725/portifolio_image_ghyaht_b85bd9.png" alt="Avatar" style={{ zIndex: 1 }} />
       </section>
     </Profile>
