@@ -2,11 +2,12 @@ import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import {SkillBox} from "./styledComponent"
 import "./index.css"
-import {useEffect, useRef} from "react"
+import {useEffect, useRef, useState} from "react"
 
 gsap.registerPlugin(ScrollTrigger)
 
-const Skills=()=> {
+
+
   const frontend=[{name:"HTML", icon:"https://res.cloudinary.com/dky72aehn/image/upload/v1713798519/html_1051277_hrexj2.png", color:"orange" }, 
   {name:"CSS", icon:"https://res.cloudinary.com/dky72aehn/image/upload/v1713798428/social_11516361_ik5c4l.png",  color:"skyblue"  }, 
   {name:"JS", icon:"https://res.cloudinary.com/dky72aehn/image/upload/v1713798427/js_5968292_pwhqit.png",  color:"#f0db4f"  },
@@ -24,6 +25,12 @@ const Skills=()=> {
  ]
 
 
+
+
+
+const Skills=()=> {
+const [ani, setani]=useState(false)
+
 const skillsList=(item)=>{
   const {name, icon, color}=item
   return (<SkillBox className="box"color={color}>
@@ -32,38 +39,87 @@ const skillsList=(item)=>{
   </SkillBox>)
 }
 const element=useRef(null)
+const image=useRef(null)
+const div=useRef(null)
+const hrl=useRef(null)
+const hrr=useRef(null)
 
 useEffect(()=>{
 const el=element.current
+const one=image.current
 
+const two=div.current
 
-gsap.fromTo(el, {opacity:0}, {opacity:1, duration:1, scrollTrigger:{
-  start:"top 60%",
+gsap.fromTo(one, {x:"-900px", opacity:0 }, {x:"0px", opacity:1, ease:"slow(0.7,0.7,false)",
+   scrollTrigger:{
+ 
+  start:"top 80%",
+  end:"top 0%",
+  scrub:3,
   trigger:el,
-  scrub:true,
   markers:true,
-  toggleClass:{targets:el, className:"slide-in-blurred-bottom"}
+ 
+
 
 }})
 
+gsap.fromTo(el, {opacity:0, y:"-90px",}, {y:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
+  start:"top 80%",
+  end:"top 0%",
+scrub:3,
+  trigger:el,
+  markers:true,
+ 
+ 
+}})
 
+gsap.fromTo(hrl.current, {opacity:0, x:"-190px",}, {x:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
+  start:"top 80%",
+  end:"top 0%",
+scrub:3,
+  trigger:el,
+  markers:true,
+ 
+ 
+}})
+gsap.fromTo(hrr.current, {opacity:0, x:"190px",}, {x:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
+  start:"top 80%",
+  end:"top 0%",
+scrub:3,
+  trigger:el,
+  markers:true,
+ 
+ 
+}})
 
+ 
+gsap.fromTo(two, {opacity:0, x:"900px",}, {x:"0px", opacity:1, ease: "expoScale(0.5,7,none)", 
 
-})
+ scrollTrigger:{
+  start:"top 80%",
+  end:"top 0%",
+scrub:3,
+  trigger:el,
+  markers:true,
+ 
+ 
+}})
+}, [])
+
 
 
     
   return (
 
-   <div className="skill_main" ref={element} >
+   <div className="skill_main"   >
      <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}  > 
-      <hr  /> 
-      <h1 style={{fontWeight:"650", marginRight:"20px", marginLeft:"20px"}} >skills</h1>
-       <hr  />
+      <hr  ref={hrl}/> 
+      <h1 style={{fontWeight:"650", marginRight:"20px", marginLeft:"20px"}} ref={element} >skills</h1>
+       <hr ref={hrr} />
      </div>
      <div className='s_main'>
-        <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1713725258/undraw_static_assets_rpm6_ejpryd.svg" className="svg_pic"/>
-      <div className="skills_div">
+        <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1713725258/undraw_static_assets_rpm6_ejpryd.svg" className="svg_pic" ref={image} />
+      <div className="skills_div"  ref={div} >
       
        <div  className="all_skills">
        <div className="each_skill_div">
