@@ -53,7 +53,7 @@ li{
     justify-content: flex-start;
     align-items: flex-start;
   flex-wrap:wrap;
-    width:50%;
+    width:80%;
     margin:auto;
     height:600px;
     background-color: black;
@@ -74,9 +74,9 @@ li{
 
   }
 
-  @media(orientation:portrait){
+  @media(max-width:768px){
     .first_one{
-        left:63px;
+        left:45px;
     }
 }
 
@@ -85,9 +85,9 @@ li{
 
   }
 
-  @media(orientation:portrait){
+  @media(max-width:768px){
     .second_one{
-        left:225px;
+        left:190px;
     }
 }
 
@@ -97,9 +97,9 @@ li{
 
   }
 
-  @media(orientation:portrait){
+  @media(max-width:768px){
     .third_one{
-        left:380px;
+        left:330px;
     }
 }
 
@@ -109,8 +109,8 @@ li{
 
   }
 
-  @media(orientation:portrait){
+  @media(max-width:768px){
     .fourth_one{
-        left:540px;
+        left:470px;
     }
 }
