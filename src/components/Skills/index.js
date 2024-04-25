@@ -93,8 +93,6 @@ gsap.fromTo(hrr.current, {opacity:0, x:"580px",}, {x:"70px", opacity:1, ease: "s
   end:"top 50%",
   scrub:3,
   trigger:el,
-  markers:true
- 
 }});
 
  

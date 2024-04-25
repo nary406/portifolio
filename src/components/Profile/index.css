@@ -338,8 +338,10 @@
   justify-content: space-between;
   align-items: center;
 }
-
-
+.typewriter  {
+ padding:0px;
+ margin:0px;
+}
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
@@ -350,7 +352,7 @@
   align-self: flex-start;
 
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 7px solid orange; /* The typwriter cursor */
+  border-right: 5px solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .19em; /* Adjust as needed */
@@ -361,7 +363,9 @@
 
 @media (orientation:portrait){
   .typewriter h1{
-    font-size:40px;
+    font-size:28px;
+  
+   
   }
 }
 /* The typing effect */
