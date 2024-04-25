@@ -51,8 +51,7 @@ useEffect(()=>{
        </div>
        <br/>
         <p style={{ fontFamily: "Comfortaa", fontWeight: "900px", color:"white", fontSize:"17px" }}>
-          Welcome to my Full Stack Developer portfolio! I specialize in crafting seamless digital experiences from frontend to backend. I build robust, user-friendly web applications. Explore my projects to see how I blend creativity with technical excellence to deliver results that exceed expectations. Let's connect and discuss how we can bring your vision to life..
-        </p>
+        I'm a web developer skilled in HTML, CSS, JavaScript, ReactJS, and more. I work on both front-end and back-end technologies, such as Node.js, Express, SQL,  and MongoDB. I keep up with industry trends and am ready to contribute to your team's success.</p>
       
         <div className='button_div'>   
 <div>
