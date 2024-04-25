@@ -40,8 +40,17 @@ useEffect(()=>{
         </h1>
      
        </div>
+       <div >
+        <br/>
+       <h1 style={{fontSize:"30px", fontFamily:"Comfortaa", color:"white"}}>
+          I'am a
+          <span style={{ fontSize: "40px" }}> F</span>
+          ull Stack Developer
+        </h1>
+     
+       </div>
        <br/>
-        <p style={{ fontFamily: "Comfortaa", fontWeight: "900px", fontSize:"17px" }}>
+        <p style={{ fontFamily: "Comfortaa", fontWeight: "900px", color:"white", fontSize:"17px" }}>
           Welcome to my Full Stack Developer portfolio! I specialize in crafting seamless digital experiences from frontend to backend. I build robust, user-friendly web applications. Explore my projects to see how I blend creativity with technical excellence to deliver results that exceed expectations. Let's connect and discuss how we can bring your vision to life..
         </p>
       
