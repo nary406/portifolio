@@ -76,7 +76,7 @@ li{
 
   @media(orientation:portrait){
     .first_one{
-        left:75px;
+        left:63px;
     }
 }
 
@@ -87,7 +87,7 @@ li{
 
   @media(orientation:portrait){
     .second_one{
-        left:245px;
+        left:225px;
     }
 }
 
@@ -99,7 +99,7 @@ li{
 
   @media(orientation:portrait){
     .third_one{
-        left:415px;
+        left:380px;
     }
 }
 
@@ -111,6 +111,6 @@ li{
 
   @media(orientation:portrait){
     .fourth_one{
-        left:590px;
+        left:540px;
     }
 }
