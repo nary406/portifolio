@@ -36,10 +36,11 @@ export  const  Nav=styled.div`
    height:60px;
    color:white;
    padding-right:20px;
-   padding-left:40px;
+   padding-left:20px;
    margin:0px;
    z-index:2;
    position:fixed;
+  
   
 background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 background: rgba( 243, 248, 253, 0.35 );
@@ -54,7 +55,7 @@ background: rgba( 243, 248, 253, 0.35 );
    justify-content:flex-start;
    align-items:flex-start;
 
-   transition:0.3s ease-in-out;
+  
    height:${(props)=>(props.ham&&"250px")};
    }
  

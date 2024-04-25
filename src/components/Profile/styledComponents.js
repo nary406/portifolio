@@ -15,8 +15,8 @@ display:flex;
    align-items:center;
    width:100%;
   height:100lvh;
-
-   padding:50px 100px 0px 0px;
+  overflow-x: hidden;
+   padding:50px 100px 0px 100px;
    
    
    @media (orientation:portrait){

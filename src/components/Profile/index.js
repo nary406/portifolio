@@ -1,16 +1,37 @@
-import React, { useState,useEffect} from 'react';
+import React, { useState, useRef, useEffect} from 'react';
 import { SlCloudDownload } from "react-icons/sl";
+import gsap from "gsap"
+import {ScrollTrigger} from "gsap/ScrollTrigger"
 import { Profile } from "./styledComponents";
 import SocialButtons from '../socialicons';
 import "./index.css";
 
-const Profilesection = () => {
+gsap.registerPlugin(ScrollTrigger)
 
+const Profilesection = () => {
+const des=useRef(null)
+const pic=useRef(null)
+
+useEffect(()=>{
+
+  gsap.fromTo(des.current, {x:"-900px", opacity:0 }, {x:"0px", opacity:1, duration:1, ease:"slow(0.7,7.7,false)",
+  
+  });
+  
+  gsap.fromTo(pic.current, {opacity:0, x:"900px", }, {x:"0px", opacity:1, duration:1,  ease:"slow(0.7,7.7,false)",
+  
+  
+  })
+  
+  
+    })
+    
+  
 
 
   return (
     <Profile >
-      <div className="profile-description " data-speed="0.7">
+      <div className="profile-description " ref={des} >
        <div className="typewriter">
        <h1 className="tracking-in-expand">
           Hi, I'am
@@ -43,8 +64,8 @@ const Profilesection = () => {
          </div>
 
       </div>
-      <section className="banner scale-in-center" >
-        <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1713083725/portifolio_image_ghyaht_b85bd9.png" alt="Avatar" style={{ zIndex: 1 }} />
+      <section className="banner " >
+        <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1713083725/portifolio_image_ghyaht_b85bd9.png" alt="Avatar" style={{ zIndex: 1 }} ref={pic} />
       </section>
     </Profile>
   );

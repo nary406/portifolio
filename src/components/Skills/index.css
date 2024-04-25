@@ -3,7 +3,7 @@
     padding-top:50px;
    
     text-align: center;
-    
+    overflow-x:hidden;
 }
 
 hr{
@@ -12,7 +12,18 @@ hr{
     border-radius: 50px;
     color:black;
     opacity:1;
+   overflow-x: hidden;
 }
+
+.skill_head{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow-x:hidden;
+        overflow-y:visible;
+}
+
 
 .s_main{
     
@@ -25,10 +36,18 @@ hr{
     padding:0px 40px 20px 40px;
    margin: 0px;
    width: 100%;
-   
-
-   
 }
+
+@media (orientation:portrait){
+        .s_main{
+            flex-direction:column;
+            align-items: center;
+           overflow:hidden;
+           justify-content: space-around;
+            padding:50px 20px 20px 20px;
+           
+        }
+    }
 
 .bounce-in-left {
 	-webkit-animation: bounce-in-left 1.1s both;
@@ -143,15 +162,7 @@ hr{
 
 
 
-@media (orientation:portrait){
-    .s_main{
-        flex-direction:column;
-        align-items: center;
-       overflow:hidden;
-        padding:50px 20px 20px 20px;
-       
-    }
-}
+
 
 
 
@@ -187,7 +198,7 @@ hr{
     justify-content: flex-start;
     align-items: center;
     border-radius: 30px;;
-   
+    transition:box-shadow 550ms;
 }
 @media (orientation:portrait){
     .skills_div{
@@ -198,7 +209,8 @@ hr{
 }
 
 .skills_div:hover{
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+       
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .each_skill_div{

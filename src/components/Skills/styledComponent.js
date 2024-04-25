@@ -15,7 +15,7 @@ min-width:80px;
 max-height:100px;
 max-width:100px;
 border-radius: 20px;
-transition:all 450ms;
+transition:all 500ms;
 &:hover {
    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     transform: scale(1.1) ;
