@@ -119,7 +119,7 @@ const resFunc=(e)=>{
 }
   return (
     <div className="p_main">
-      <h1>Projects</h1>
+      <h1 style={{fontFamily:"Handlee"}}>Projects</h1>
 
 
       <ul className="p_tabs" >
