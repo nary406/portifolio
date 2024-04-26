@@ -3,12 +3,21 @@ import styled from "styled-components";
 export const Extra = styled.div`
   position: absolute;
   background-color: white;
-  width: 100px;
   z-index: 0;
   border-radius: 20px;
   height: 50px;
   transition: all 350ms;
-  left: calc(${props => props.left} * 1%);
+  
+
+  @media(max-width:768px){
+    width: ${(props) => {
+        if (props.width === "dynamic" || props.width === "responsive") {
+          return "100px";
+        } else {
+          return "50px";
+        }
+      }};
+  }
 `;
 
 // Usage:

@@ -121,8 +121,9 @@ const resFunc=(e)=>{
     <div className="p_main">
       <h1>Projects</h1>
 
+
       <ul className="p_tabs" >
-      <Extra left={colorTab} className={ `same ${colorTab}`}></Extra>
+      <Extra  width={activeTab} className={ `same ${colorTab}`}></Extra>
         <li >
         <button   className="p_disible_btn"  id="all" onClick={allFunc}>All</button></li>
 
