@@ -11,7 +11,8 @@
     justify-content: space-evenly;
    height:70px;
    padding-left:0px;
-    transition:all .5s ease 0s;
+    transition:all .5s cubic-bezier(8, 0.7, 1.0, 0.1) ;
+    
     border-radius: 20px;
     align-items: center;
     width:50%;
@@ -38,6 +39,8 @@
 .p_disible_btn{
     background-color: transparent;
     border: none;
+    font-weight: 900;
+    font-family:Handlee ;
    } 
 
 
