@@ -1,12 +1,7 @@
 import styled from "styled-components";
 
-export const Extra = styled.div`
-  position: absolute;
-  background-color: white;
-  z-index: 0;
-  border-radius: 20px;
-  height: 50px;
-  transition: all 350ms;
+export const Extra = styled.button`
+ 
   
 
   @media(max-width:768px){

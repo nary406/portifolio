@@ -8,47 +8,27 @@ import { useRef, useEffect, useState } from 'react';
 gsap.registerPlugin(ScrollTrigger)
 const projectData=[
     {
-      "name": "Static Product",
-      "image": "https://example.com/image1.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam aliquet libero, ac convallis dolor suscipit vel.",
-      "id": "static_1",
-      "type": "static"
-    },
-    {
-      "name": "Dynamic Product",
-      "image": "https://example.com/image2.jpg",
-      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-      "id": "dynamic_2",
-      "type": "dynamic"
-    },
-    {
-      "name": "Responsive Product",
-      "image": "https://example.com/image3.jpg",
-      "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis convallis orci ac lectus malesuada tempor.",
-      "id": "responsive_3",
+      "name": "Nxt Trends",
+      "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714152034/ecommerce_qi2w8v.jpg",
+      "description": "Shopping websites: Online destinations for browsing and purchasing various consumer products.",
+      "id": "responsive_1",
       "type": "responsive"
     },
     {
-      "name": "Additional Static Product",
-      "image": "https://example.com/image5.jpg",
-      "description": "Fusce vitae justo eu libero ultrices fermentum. Sed nec tincidunt mauris, ac fringilla lorem.",
-      "id": "static_5",
-      "type": "static"
-    },
-    {
-      "name": "Additional Dynamic Product",
-      "image": "https://example.com/image6.jpg",
-      "description": "Etiam non ex non justo convallis accumsan. Nam ultricies turpis id nisl vehicula, id aliquet eros cursus.",
-      "id": "dynamic_6",
-      "type": "dynamic"
-    },
-    {
-      "name": "Additional Responsive Product",
-      "image": "https://example.com/image7.jpg",
-      "description": "Donec eu ex vel metus vestibulum tempus vel a velit. Nulla facilisi.",
-      "id": "responsive_7",
-      "type": "responsive"
-    }
+        "name": "Nxt Trends",
+        "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714152034/ecommerce_qi2w8v.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam aliquet libero, ac convallis dolor suscipit vel.",
+        "id": "responsive_2",
+        "type": "responsive"
+      },
+      {
+        "name": "Nxt Trends",
+        "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714152034/ecommerce_qi2w8v.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam aliquet libero, ac convallis dolor suscipit vel.",
+        "id": "responsive_3",
+        "type": "responsive"
+      },
+   
   ]
   
   
@@ -118,23 +98,29 @@ const resFunc=(e)=>{
      setTab(e.target.id) 
 }
   return (
-    <div className="p_main">
-      <h1 style={{fontFamily:"Handlee"}}>Projects</h1>
 
+  <div className='p_img_pros'>
+     <h1 style={{fontFamily:"j", textAlign:"center", fontWeight:"00"}}>Projects</h1>
+
+     <div className="project_container">
+     <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1714245663/4058742_2130165_jmxypu.svg" className="mob_Img"/>
+       <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1714244454/agile_method-amico_ude0mr.svg" className="desk_Img"/>
+     <div className="p_main">
+     
 
       <ul className="p_tabs" >
-      <Extra  width={activeTab} className={ `same ${colorTab}`}></Extra>
+      {/* <Extra  width={activeTab} className={ `same ${colorTab}`}></Extra> */}
         <li >
-        <button   className="p_disible_btn"  id="all" onClick={allFunc}>All</button></li>
+        <button  className={`${activeTab==="all"?"p_active_btn":"p_disible_btn"}  `}  id="all" onClick={allFunc}>All</button></li>
+
+       <li>
+       <button className={`${activeTab==="static"?"p_active_btn":"p_disible_btn"}  `}  id="static" onClick={statFunc}>Static</button></li>
 
        <li >
-       <button className="p_disible_btn"  id="static" onClick={statFunc}>Static</button></li>
+       <button  className={`${activeTab==="dynamic"?"p_active_btn":"p_disible_btn"}  `} id="dynamic" onClick={dynFunc}>Dynamic</button></li>
 
        <li >
-       <button  className="p_disible_btn"  id="dynamic" onClick={dynFunc}>Dynamic</button></li>
-
-       <li >
-       <button  className="p_disible_btn" id="responsive" onClick={resFunc}>Responsive</button></li>
+       <button  width={activeTab} ton  className={`${activeTab==="responsive"?"p_active_btn":"p_disible_btn"}  `} id="responsive" onClick={resFunc}>Responsive</button></li>
       
       </ul>
       
@@ -144,6 +130,8 @@ const resFunc=(e)=>{
         {finalData.map((item)=> <ProjectItem  test={activeTab} item={item} key={item.id}/>)}
      </div>
     </div>
+   </div>
+  </div>
   )
 }
 
