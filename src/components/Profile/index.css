@@ -207,8 +207,9 @@
 @media (orientation:portrait){
   .typewriter h1{
     font-size:28px;
-  
-   
+  }
+  .typewriter span{
+    font-size:45px;
   }
 }
 /* The typing effect */
@@ -222,3 +223,4 @@
   from, to { border-color: transparent }
   40% { border-color: white }
 }
+

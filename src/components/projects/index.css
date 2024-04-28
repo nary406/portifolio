@@ -23,7 +23,7 @@
     align-items: center;
    height:70px;
 margin-bottom:40px;
-    transition:all ease 1.2s ;
+    transition:all ease 500ms ;
     margin:auto;
     margin-bottom:40px;
     border-radius: 20px;
@@ -144,6 +144,26 @@ li{
     @media(orientation:portrait){
         height:100%;
     }
+}
+
+.pro_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden;
+    width:90%;
+    overflow-y:visible;
+
+  }
+  
+  hr{
+    width:100px;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    color:black;
+    opacity:1;
+   overflow-x: hidden;
 }
 
 /* .same{
