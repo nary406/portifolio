@@ -53,10 +53,10 @@ function Projects() {
 
 // total section
 
-gsap.fromTo(down_ani.current, {y:"100px", opacity:0 }, {y:"0px", opacity:1, ease:"slow(5,5,false)",
+gsap.fromTo(down_ani.current, {y:"300px",  }, {y:"0px",  ease:"slow(7,7,false)",
 scrollTrigger:{
   start:"top 100%",
-  end:"top 50%",
+  end:"top 80%",
   scrub:3,
   trigger:el,
  
