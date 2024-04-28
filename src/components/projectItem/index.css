@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=M+PLUS+Rounded+1c&display=swap');
 
 .container{
-    height: 450px;
+    height: 280px;
    width:260px;
    position: relative;
    padding-right:0px;
@@ -28,7 +28,7 @@
   left:0px;
 padding:20px;
   position: absolute;
-  transition:all ease 1.5s;
+  transition:all ease 1s;
   backface-visibility: hidden;
 
    
@@ -52,9 +52,9 @@ padding:20px;
 }
 .flip_card{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
+    flex-direction:column;
+    justify-content: space-evenly;
+  padding: 20px;
     height: 100%;
     position:absolute;
     width:100%;

@@ -6,27 +6,35 @@ import {ScrollTrigger} from "gsap/ScrollTrigger"
 import ProjectItem from '../projectItem';
 import { useRef, useEffect, useState } from 'react';
 gsap.registerPlugin(ScrollTrigger)
+
 const projectData=[
     {
-      "name": "Nxt Trends",
-      "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714152034/ecommerce_qi2w8v.jpg",
+      name: "Nxt Trends",
+      "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714321868/21726902_6509982_ghdccw.jpg",
       "description": "Shopping websites: Online destinations for browsing and purchasing various consumer products.",
       "id": "responsive_1",
-      "type": "responsive"
+      type: "responsive"
     },
     {
-        "name": "Nxt Trends",
-        "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714152034/ecommerce_qi2w8v.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam aliquet libero, ac convallis dolor suscipit vel.",
+      name: "Jobby App",
+        "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714321149/Screenshot_2024-04-28_214408_d3xk5b.png",
+        "description": "Job websites: Platforms connecting job seekers with employment opportunities online.",
         "id": "responsive_2",
-        "type": "responsive"
+        type: "responsive"
       },
       {
-        "name": "Nxt Trends",
-        "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714152034/ecommerce_qi2w8v.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam aliquet libero, ac convallis dolor suscipit vel.",
+        name: "Youtube Clone",
+        "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714326409/Screenshot_2024-04-28_214220-Photoroom_bpqlxd.png",
+        "description": "YouTube websites: Platforms hosting videos for entertainment, education, and information sharing online.",
         "id": "responsive_3",
-        "type": "responsive"
+        type: "responsive"
+      },
+      {
+        name: "TodoList",
+        "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714321102/8810413_tk7y4a.jpg",
+        "description": "TodoList: Organize tasks, manage priorities, track progress, and enhance productivity effectively.",
+        "id": "responsive_4",
+        type: "dynamic"
       },
    
   ]
@@ -61,10 +69,10 @@ scrollTrigger:{
   trigger:el,
  
 }
-});
+}, []);
 
     
-    // projects tabs
+  // projects tabs
    
     
 //     gsap.fromTo(one, {x:"-900px", opacity:0 }, {x:"0px", opacity:1,duration:1, ease:"slow(0.7,0.7,false)",
@@ -154,7 +162,7 @@ scrollTrigger:{
 
 const filterdData=projectData.filter((item)=>item.type===activeTab)
 const finalData=filterdData.length===0?projectData:filterdData
-
+console.log(finalData)
 
 const allFunc=(e)=>{
    

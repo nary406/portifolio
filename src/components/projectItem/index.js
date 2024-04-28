@@ -26,11 +26,12 @@ function ProjectItem(props) {
     <div className="container">
         <div className="p_box"  onMouseEnter={()=>console.log("card")} >
         <div className="flip_card" onClick={()=>console.log("flip")}>
+          <p style={{fontSize:"15px"}}>{description}</p>
             <button>View Project</button>
         </div>
         <img src={image} className="p_img"/>
       <p>{name}</p>
-      <p>{description}</p>
+     
     </div>
     </div>
   )
