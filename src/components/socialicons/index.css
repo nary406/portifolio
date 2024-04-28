@@ -15,23 +15,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba( 243, 248, 253, 0.35 );
    
-    backdrop-filter: blur( 14.5px );
-    -webkit-backdrop-filter: blur( 14.5px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
  
     padding: 15px 5px;
     border-radius: 5em;
     
   }
   
-  .social-buttons:hover {
-    
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  
-  }
+
   .social-button {
     display: flex;
     justify-content: center;
@@ -40,81 +33,104 @@
     height: 50px;
     border-radius: 50%;
     margin: 0 10px;
-    background-color: #fff;
+   
     box-shadow: 0px 0px 4px #00000027;
     transition: 0.3s;
   }
 
   @media (orientation:portrait){
     .social-button{
-        width: 25px;
-        height: 25px;
-        padding: 10px 0px;
+        width: 35px;
+        height: 35px;
+      
     }
-    .social-buttons{
-       
-        padding: 10px 0px;
-    }
+    
   }
   
   .social-button:hover {
-    background-color: #f2f2f2;
-    box-shadow: 0px 0px 6px 3px #00000027;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      transform: scale(1.1) ;
   }
   
   .social-buttons svg {
-    transition: 0.3s;
+   
     height: 50px;
     width:30px;
   }
   
   .facebook {
-    background-color: #3b5998;
+    background-color: white;
+    &&:hover{
+      background-color: #045799;
+      fill:white;
+    }
   }
   
   .facebook svg {
-    fill: #f2f2f2;
+    fill: #045799;
   }
   
   .facebook:hover svg {
-    fill: #3b5998;
+    fill: white;
   }
   
   .github {
-    background-color: #333;
+    background-color: white;
+   
+    &&:hover{
+      background-color: black;
+      fill:white;
+     
+    }
+  }
+
+  .github:hover{
+
+    background-color: black;
   }
   
-  .github a {
+  .github svg {
     width: 35px;
     height: 35px;
-    fill: #f2f2f2;
+    border-radius:20px;
+    fill: #045799;
   }
   
   .github:hover svg {
-    fill: #333;
+    background-color: black;
+    fill:white;
+    
   }
   
   .linkedin {
-    background-color: #0077b5;
+    background-color: white;
+    &&:hover{
+      background-color: #045799;
+      fill:white;
+    }
   }
   
   .linkedin svg {
-    fill: #f2f2f2;
+    fill: #045799;
   }
   
   .linkedin:hover svg {
-    fill: #0077b5;
+    fill: white;
   }
   
   .instagram {
-    background-color: #c13584;
+    background-color: white;
+    &&:hover{
+      background-color: #c13584;
+      fill:white;
+    }
   }
   
   .instagram svg {
-    fill: #f2f2f2;
+    fill: #045799;
   }
   
   .instagram:hover svg {
-    fill: #c13584;
+    fill: white;
   }
   

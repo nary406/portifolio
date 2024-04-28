@@ -33,16 +33,16 @@ useEffect(()=>{
     <Profile >
       <div className="profile-description " ref={des} >
        <div className="typewriter">
-       <h1 className="tracking-in-expand">
+       <h1  style={{fontFamily: "julius sans one"}}>
           Hi, I'am
-          <span style={{ fontSize: "60px" }}> N</span>
+          <span > N</span>
           arendra
         </h1>
      
        </div>
        <div >
         <br/>
-       <h1 style={{fontSize:"30px", fontFamily:"Comfortaa", color:"white"}}>
+       <h1 style={{fontSize:"30px", fontFamily:"julius sans one", color:"white"}}>
           I'am a
           <span style={{ fontSize: "40px" }}> F</span>
           ull Stack Developer

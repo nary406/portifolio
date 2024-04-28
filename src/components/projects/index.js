@@ -100,29 +100,31 @@ const resFunc=(e)=>{
   return (
 
   <div className='p_img_pros'>
-     <h1 style={{fontFamily:"j", textAlign:"center", fontWeight:"00"}}>Projects</h1>
+     <h1 style={{fontFamily:"julius sans one", textAlign:"center", fontWeight:"900"}}>Projects</h1>
 
      <div className="project_container">
      <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1714245663/4058742_2130165_jmxypu.svg" className="mob_Img"/>
        <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1714244454/agile_method-amico_ude0mr.svg" className="desk_Img"/>
+     
+     
      <div className="p_main">
      
 
-      <ul className="p_tabs" >
+      <div className="p_tabs" >
       {/* <Extra  width={activeTab} className={ `same ${colorTab}`}></Extra> */}
-        <li >
-        <button  className={`${activeTab==="all"?"p_active_btn":"p_disible_btn"}  `}  id="all" onClick={allFunc}>All</button></li>
-
-       <li>
-       <button className={`${activeTab==="static"?"p_active_btn":"p_disible_btn"}  `}  id="static" onClick={statFunc}>Static</button></li>
-
-       <li >
-       <button  className={`${activeTab==="dynamic"?"p_active_btn":"p_disible_btn"}  `} id="dynamic" onClick={dynFunc}>Dynamic</button></li>
-
-       <li >
-       <button  width={activeTab} ton  className={`${activeTab==="responsive"?"p_active_btn":"p_disible_btn"}  `} id="responsive" onClick={resFunc}>Responsive</button></li>
       
-      </ul>
+        <p  className={`${activeTab==="all"?"p_active_btn":"p_disible_btn"}  `}  id="all" onClick={allFunc}>All</p>
+
+
+       <p className={`${activeTab==="static"?"p_active_btn":"p_disible_btn"}  `}  id="static" onClick={statFunc}>Static</p>
+
+    
+       <p  className={`${activeTab==="dynamic"?"p_active_btn":"p_disible_btn"}  `} id="dynamic" onClick={dynFunc}>Dynamic</p>
+
+    
+       <p  width={activeTab} ton  className={`${activeTab==="responsive"?"p_active_btn":"p_disible_btn"}  `} id="responsive" onClick={resFunc}>Responsive</p>
+      
+      </div>
       
      
 
