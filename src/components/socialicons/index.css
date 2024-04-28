@@ -19,7 +19,7 @@
     border-radius: 10px;
     
  
-    padding: 15px 5px;
+    padding: 5px 5px;
     border-radius: 5em;
     
   }
@@ -40,8 +40,9 @@
 
   @media (orientation:portrait){
     .social-button{
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
+        margin: 0 5px;
       
     }
     
@@ -54,8 +55,8 @@
   
   .social-buttons svg {
    
-    height: 50px;
-    width:30px;
+    height: 40px;
+    width:40px;
   }
   
   .facebook {

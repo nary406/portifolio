@@ -8,8 +8,9 @@ const App=()=> {
   return (
    <>
   
-  <Header/>
+
   <div className="app_div">
+  <Header/>
   <Profilesection/>
    <Skills/>
    <Projects/>

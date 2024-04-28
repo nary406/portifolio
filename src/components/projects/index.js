@@ -91,7 +91,7 @@ scrollTrigger:{
     
     gsap.fromTo(el, {opacity:0, y:"-90px",}, {y:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
       start:"top 80%",
-      end:"top 50%",
+      end:"top 70%",
       scrub:3,
       trigger:el,
     
@@ -99,7 +99,7 @@ scrollTrigger:{
     
     gsap.fromTo(hrl.current, {opacity:0, x:"-580px",}, {x:"-100px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
       start:"top 80%",
-      end:"top 50%",
+      end:"top 70%",
       scrub:3,
       trigger:el,
      
