@@ -50,9 +50,9 @@ function Projects() {
     const element=useRef(null)
     const image=useRef(null)
     const div=useRef(null)
-    const hrl=useRef(null)
+    const prl=useRef(null)
     const down_ani=useRef(null)
-    const hrr=useRef(null)
+    const prr=useRef(null)
     
     useEffect(()=>{
     const el=element.current
@@ -105,7 +105,7 @@ scrollTrigger:{
     
     }});
     
-    gsap.fromTo(hrl.current, {opacity:0, x:"-580px",}, {x:"-100px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
+    gsap.fromTo(prl.current, {opacity:0, x:"-580px",}, {x:"-100px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
       start:"top 80%",
       end:"top 70%",
       scrub:3,
@@ -113,9 +113,9 @@ scrollTrigger:{
      
     }});
     
-    gsap.fromTo(hrr.current, {opacity:0, x:"580px",}, {x:"100px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
+    gsap.fromTo(prr.current, {opacity:0, x:"580px",}, {x:"100px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
       start:"top 80%",
-      end:"top 50%",
+      end:"top 70%",
       scrub:3,
       trigger:el,
     }});
@@ -187,9 +187,9 @@ const resFunc=(e)=>{
 
   <div className='p_img_pros' ref={down_ani}>
      <div className="pro_head"  > 
-      <hr  ref={hrl}/> 
+      <hr  ref={prl}/> 
       <h1 style={{fontWeight:"650", marginRight:"20px",fontFamily: "julius sans one, cursive", marginLeft:"20px", position:"absolute"}} ref={element} >Projects</h1>
-       <hr ref={hrr} />
+       <hr ref={prr} />
        
      </div>
      <div className="project_container" >
