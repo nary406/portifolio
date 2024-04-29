@@ -16,7 +16,7 @@ function ProjectItem(props) {
     useEffect(()=>{
 
       gsap.fromTo(but.current, {  transform:"scale(0)"}, {transform:"scale(1)",   ease: "slow(0.7,0.7,false)", scrollTrigger:{
-        start:"top 80%",
+        start:"top 90%",
         end:"top 70%",
         scrub:3,
         trigger:".container",
