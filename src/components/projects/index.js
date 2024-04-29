@@ -231,7 +231,7 @@ const resFunc=(e)=>{
      
 
      <div className='p_div' >
-        {finalData.map((item)=> <ProjectItem   test={activeTab} item={item} key={item.id}/>)}
+        {finalData.map((item)=> <ProjectItem  classy="p_tabs"  test={activeTab} item={item} key={item.id}/>)}
      </div>
     </div>
    </div>

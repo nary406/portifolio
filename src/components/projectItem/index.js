@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 function ProjectItem(props) {
     const {name, id, description, image}=props.item
     
-
+const {classy}=props
     const but=useRef(null)
     const contain=useRef(null)
 
@@ -19,7 +19,7 @@ function ProjectItem(props) {
         start:"top 90%",
         end:"top 70%",
         scrub:3,
-        trigger:".container",
+        trigger:classy,
       
       }});
     
@@ -29,7 +29,7 @@ function ProjectItem(props) {
    
    
   return (
-    <div className="container" ref={but} >
+    <div className="container"  ref={but}>
         <div className="p_box"  onMouseEnter={()=>console.log("card")}  >
         <div className="flip_card" onClick={()=>console.log("flip")}>
           <p style={{fontSize:"15px"}}>{description}</p>
