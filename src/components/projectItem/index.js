@@ -9,22 +9,28 @@ function ProjectItem(props) {
     const {name, id, description, image}=props.item
     
 
-//     const one=useRef(null)
+    const but=useRef(null)
+    const contain=useRef(null)
 
 
-//     useEffect(()=>{
+    useEffect(()=>{
 
-//         gsap.fromTo(one.current, {  transform:"scale(0.5)"}, { transform:"scale(1.5)", duration:1.5, ease:"slow(0.7,0.7,false)",
-        
-//     })
+      gsap.fromTo(but.current, {  transform:"scale(0)"}, {transform:"scale(1)",   ease: "slow(0.7,0.7,false)", scrollTrigger:{
+        start:"top 80%",
+        end:"top 70%",
+        scrub:3,
+        trigger:".container",
+      
+      }});
+    
 
 
-// },[props])
+},[])
    
    
   return (
-    <div className="container">
-        <div className="p_box"  onMouseEnter={()=>console.log("card")} >
+    <div className="container" ref={but} >
+        <div className="p_box"  onMouseEnter={()=>console.log("card")}  >
         <div className="flip_card" onClick={()=>console.log("flip")}>
           <p style={{fontSize:"15px"}}>{description}</p>
             <button>View Project</button>

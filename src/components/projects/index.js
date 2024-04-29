@@ -53,6 +53,8 @@ function Projects() {
     const prl=useRef(null)
     const down_ani=useRef(null)
     const prr=useRef(null)
+    const tab=useRef(null)
+    
     
     useEffect(()=>{
     const el=element.current
@@ -85,15 +87,25 @@ scrollTrigger:{
 //     }
 //  });
  
-//  gsap.fromTo(two, {opacity:0, x:"900px", }, {x:"0px", opacity:1, duration:1, ease:"slow(0.7,0.7,false)",
+ gsap.fromTo(tab.current, {opacity:0, transform:"scale(0)"}, {transform:"scale(1)", opacity:1,  ease:"slow(0.7,0.7,false)",
  
-//   scrollTrigger:{
-//    start:"top 80%",
-//    end:"top 50%",
-//  scrub:3,
-//    trigger:el,
-//  }})
+  scrollTrigger:{
+   start:"top 80%",
+   end:"top 70%",
+ scrub:3,
+   trigger:el,
+ }})
  
+// image scroll
+gsap.fromTo(image.current, {  transform:"scale(0)",}, {transform:"scale(1)", ease: "slow(0.7,0.7,false)", scrollTrigger:{
+  start:"top 80%",
+  end:"top 70%",
+  scrub:3,
+  trigger:el,
+
+}});
+
+
     
     // Skill heqd
     
@@ -200,7 +212,7 @@ const resFunc=(e)=>{
      <div className="p_main" ref={div}> 
      
 
-      <div className="p_tabs" >
+      <div className="p_tabs" ref={tab} >
       {/* <Extra  width={activeTab} className={ `same ${colorTab}`}></Extra> */}
       
         <p  className={`${activeTab==="all"?"p_active_btn":"p_disible_btn"}  `}  id="all" onClick={allFunc}>All</p>
@@ -219,7 +231,7 @@ const resFunc=(e)=>{
      
 
      <div className='p_div' >
-        {finalData.map((item)=> <ProjectItem  test={activeTab} item={item} key={item.id}/>)}
+        {finalData.map((item)=> <ProjectItem   test={activeTab} item={item} key={item.id}/>)}
      </div>
     </div>
    </div>
