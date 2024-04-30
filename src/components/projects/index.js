@@ -54,6 +54,7 @@ function Projects() {
     const down_ani=useRef(null)
     const prr=useRef(null)
     const tab=useRef(null)
+    const boxes=useRef(null)
     
     
     useEffect(()=>{
@@ -71,21 +72,19 @@ scrollTrigger:{
   trigger:el,
  
 }
-}, []);
+});
 
     
-  // projects tabs
-   
-    
-//     gsap.fromTo(one, {x:"-900px", opacity:0 }, {x:"0px", opacity:1,duration:1, ease:"slow(0.7,0.7,false)",
-//     scrollTrigger:{
-//       start:"top 80%",
-//       end:"top 50%",
-//       scrub:3,
-//       trigger:el,
-     
-//     }
-//  });
+gsap.fromTo(boxes.current, {opacity:1, y:"100px"}, {y:"0px", opacity:1, 
+ 
+scrollTrigger:{
+ start:"top 100%",
+ end:"top 70%",
+scrub:3,
+ trigger:boxes.current,
+}})
+
+
  
  gsap.fromTo(tab.current, {opacity:0, transform:"scale(0)"}, {transform:"scale(1)", opacity:1,  ease:"slow(0.7,0.7,false)",
  
@@ -230,7 +229,7 @@ const resFunc=(e)=>{
       
      
 
-     <div className='p_div' >
+     <div className='p_div'  ref={boxes}>
         {finalData.map((item)=> <ProjectItem  classy="p_tabs"  test={activeTab} item={item} key={item.id}/>)}
      </div>
     </div>
