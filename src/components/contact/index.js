@@ -17,10 +17,10 @@ function Contact() {
     useEffect(()=>{
         
         
-        // skill tabs
-        gsap.fromTo(left.current, {x:"-900px", opacity:0 }, {x:"0px", opacity:1,duration:1, ease:"slow(0.7,0.7,false)",
+        
+        gsap.fromTo(left.current, {x:"-500px", opacity:0 }, {x:"0px",  ease:"slow(0.7,0.7,false)",
            scrollTrigger:{
-             start:"top 80%",
+             start:"top 90%",
              end:"top 50%",
              scrub:3,
              trigger:".con_main",
@@ -28,39 +28,18 @@ function Contact() {
            }
         });
         
-        gsap.fromTo(right.current, {opacity:0, x:"900px", }, {x:"0px", opacity:1, duration:1, ease:"slow(0.7,0.7,false)",
+        gsap.fromTo(right.current, {opacity:0, x:"500px", }, {x:"0px",   ease:"slow(0.7,0.7,false)",
         
          scrollTrigger:{
-          start:"top 80%",
+          start:"top 90%",
           end:"top 50%",
         scrub:3,
           trigger:".con_main",
         }})
         
-        // Skill heqd
         
-        // gsap.fromTo(el, {opacity:0, y:"-90px",}, {y:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
-        //   start:"top 80%",
-        //   end:"top 50%",
-        //   scrub:3,
-        //   trigger:el,
         
-        // }});
-        
-        // gsap.fromTo(hrl.current, {opacity:0, x:"-580px",}, {x:"-70px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
-        //   start:"top 80%",
-        //   end:"top 50%",
-        //   scrub:3,
-        //   trigger:el,
-         
-        // }});
-        
-        // gsap.fromTo(hrr.current, {opacity:0, x:"580px",}, {x:"70px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
-        //   start:"top 80%",
-        //   end:"top 50%",
-        //   scrub:3,
-        //   trigger:el,
-        // }});
+     
         
          
         
@@ -74,7 +53,7 @@ function Contact() {
         <h3>We can do better world , learning and sharing knowledge</h3>
     <div className="con_section">
     <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1714453090/Email_campaign-amico_eb8kzv.svg" ref={left}/>
-     <form className="form_div" ref={right}>
+     <form className="form_div"  ref={right}>
         <h2>Get in Touch</h2>
         <input id="name" type="search" placeholder="Name"/>
 

@@ -9,7 +9,7 @@
     align-items: center;
     overflow: hidden;
     font-family:julius sans one ;
-    @media (orientation::portrait){
+    @media (orientation:portrait){
         height:100%;
     }
 }
@@ -26,6 +26,7 @@
 
     @media (orientation:portrait){
         flex-direction: column;
+        height:100%;
     }
 }
 
