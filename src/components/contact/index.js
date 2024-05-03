@@ -18,7 +18,7 @@ function Contact() {
         
         
         
-        gsap.fromTo(left.current, {x:"-500px", opacity:0 }, {x:"0px",  ease:"slow(0.7,0.7,false)",
+        gsap.fromTo(left.current, {x:"-500px",  }, {x:"0px",  ease:"slow(0.7,0.7,false)",
            scrollTrigger:{
              start:"top 90%",
              end:"top 50%",
@@ -28,7 +28,7 @@ function Contact() {
            }
         });
         
-        gsap.fromTo(right.current, {opacity:0, x:"500px", }, {x:"0px",   ease:"slow(0.7,0.7,false)",
+        gsap.fromTo(right.current, { x:"500px", }, {x:"0px",   ease:"slow(0.7,0.7,false)",
         
          scrollTrigger:{
           start:"top 90%",
