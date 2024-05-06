@@ -7,7 +7,7 @@
    
     @media(orientation:portrait){
         padding-right:0px;
-        height:100svh;
+        height:100%;
         margin-top:20px;
         margin-bottom:20px;
     }
@@ -59,7 +59,7 @@ hr{
     }
 
 .svg_pic{
-   max-width:40%;
+   width:40%;
 }
 
 
