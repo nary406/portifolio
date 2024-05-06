@@ -64,13 +64,15 @@ padding:20px;
    transform: rotateY(180deg);
    backface-visibility: hidden;
     border-radius:20px;
-   opacity: 1;
+   
    background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     border:2px solid white;
 }
 
 .container:hover >.p_box {
     cursor: pointer;
+    backface-visibility: visible;
+    border-radius:20px;
     transform: rotateY(180deg);
     }
 

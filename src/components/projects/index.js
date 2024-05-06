@@ -8,34 +8,47 @@ import { useRef, useEffect, useState } from 'react';
 gsap.registerPlugin(ScrollTrigger)
 
 const projectData=[
+  {
+    name: "FullStack App",
+    "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714321102/8810413_tk7y4a.jpg",
+    "description": "TodoList: Organize tasks, manage priorities, track progress, and enhance productivity effectively.",
+    "id": "responsive_4",
+    website:"https://demofrontend-delta.vercel.app/",
+    type: "dynamic",
+    username:"nary",
+  password:"nary"
+  },
     {
       name: "Nxt Trends",
       "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714321868/21726902_6509982_ghdccw.jpg",
       "description": "Shopping websites: Online destinations for browsing and purchasing various consumer products.",
       "id": "responsive_1",
-      type: "responsive"
+      website:"https://narytrends.ccbp.tech/",
+      type: "responsive",
+      username:"rahul",
+      password:"rahul@2021"
     },
     {
       name: "Jobby App",
         "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714321149/Screenshot_2024-04-28_214408_d3xk5b.png",
         "description": "Job websites: Platforms connecting job seekers with employment opportunities online.",
         "id": "responsive_2",
-        type: "responsive"
+        website:"https://naryjobbyapp.ccbp.tech/",
+        type: "responsive",
+        username:"rahul",
+      password:"rahul@2021"
       },
       {
         name: "Youtube Clone",
         "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714326409/Screenshot_2024-04-28_214220-Photoroom_bpqlxd.png",
         "description": "YouTube websites: Platforms hosting videos for entertainment, education, and information sharing online.",
         "id": "responsive_3",
-        type: "responsive"
+        website:"https://naryproject.ccbp.tech/",
+        type: "responsive",
+        username:"rahul",
+      password:"rahul@2021"
       },
-      {
-        name: "TodoList",
-        "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714321102/8810413_tk7y4a.jpg",
-        "description": "TodoList: Organize tasks, manage priorities, track progress, and enhance productivity effectively.",
-        "id": "responsive_4",
-        type: "dynamic"
-      },
+     
    
   ]
   
