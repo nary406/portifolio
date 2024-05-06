@@ -14,9 +14,9 @@ display:flex;
    justify-content:space-between;
    align-items:center;
    width:100%;
-  height:100lvh;
+  height:100svh;
   overflow-x: hidden;
-   padding:50px 100px 0px 100px;
+   padding:0px 50px 0px 100px;
    
    
    @media (orientation:portrait){

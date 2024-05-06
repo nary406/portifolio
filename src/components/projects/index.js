@@ -59,12 +59,10 @@ function Projects() {
     
     useEffect(()=>{
     const el=element.current
-    const one=image.current
-    const two=div.current
-
+   
 // total section
 
-gsap.fromTo(down_ani.current, {y:"300px",  }, {y:"0px",  ease:"slow(7,7,false)",
+gsap.fromTo(down_ani.current, {y:"50px",  }, {y:"0px",  ease:"slow(7,7,false)",
 scrollTrigger:{
   start:"top 100%",
   end:"top 80%",
@@ -86,14 +84,7 @@ scrub:3,
 
 
  
- gsap.fromTo(tab.current, {opacity:0, transform:"scale(0)"}, {transform:"scale(1)", opacity:1,  ease:"slow(0.7,0.7,false)",
- 
-  scrollTrigger:{
-   start:"top 80%",
-   end:"top 70%",
- scrub:3,
-   trigger:el,
- }})
+
  
 // image scroll
 gsap.fromTo(image.current, {  transform:"scale(0)",}, {transform:"scale(1)", ease: "slow(0.7,0.7,false)", scrollTrigger:{
@@ -106,7 +97,7 @@ gsap.fromTo(image.current, {  transform:"scale(0)",}, {transform:"scale(1)", eas
 
 
     
-    // Skill heqd
+    //  heqd
     
     gsap.fromTo(el, {opacity:0, y:"-90px",}, {y:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
       start:"top 80%",
@@ -136,68 +127,13 @@ gsap.fromTo(image.current, {  transform:"scale(0)",}, {transform:"scale(1)", eas
     }, [])
     
 
-        // gsap.fromTo(two, {opacity:0, x:"900px", }, {x:"0px", opacity:1, duration:1, ease:"slow(0.7,0.7,false)",
-        
-        //  scrollTrigger:{
-        //   start:"top 80%",
-        //   end:"top 50%",
-        // scrub:3,
-        //   trigger:el,
-        // }})
-        
-        // // Skill heqd
-        
-        // gsap.fromTo(el, {opacity:0, y:"-90px",}, {y:"0px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
-        //   start:"top 80%",
-        //   end:"top 50%",
-        //   scrub:3,
-        //   trigger:el,
-        
-        // }});
-        
-        // gsap.fromTo(hrl.current, {opacity:0, x:"-580px",}, {x:"-70px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
-        //   start:"top 80%",
-        //   end:"top 50%",
-        //   scrub:3,
-        //   trigger:el,
-         
-        // }});
-        
-        // gsap.fromTo(hrr.current, {opacity:0, x:"580px",}, {x:"70px", opacity:1, ease: "slow(0.7,0.7,false)", scrollTrigger:{
-        //   start:"top 80%",
-        //   end:"top 50%",
-        //   scrub:3,
-        //   trigger:el,
-        // }});
-        
-
-const filterdData=projectData.filter((item)=>item.type===activeTab)
-const finalData=filterdData.length===0?projectData:filterdData
-console.log(finalData)
-
-const allFunc=(e)=>{
-   
-     setTab(e.target.id) 
-}
-
-const statFunc=(e)=>{
-   
-     setTab(e.target.id) 
-}
 
 
-const dynFunc=(e)=>{
-    
-     setTab(e.target.id) 
-}
-const resFunc=(e)=>{
-  
-     setTab(e.target.id) 
-}
+
   return (
 
-  <div className='p_img_pros' ref={down_ani}>
-     <div className="pro_head"  > 
+  <div className='p_img_pros' ref={down_ani} id="projects_section">
+     <div className="pro_head"> 
       <hr  ref={prl}/> 
       <h1 style={{fontWeight:"650", marginRight:"20px",fontFamily: "julius sans one, cursive", marginLeft:"20px", position:"absolute"}} ref={element} >Projects</h1>
        <hr ref={prr} />
@@ -211,26 +147,11 @@ const resFunc=(e)=>{
      <div className="p_main" ref={div}> 
      
 
-      <div className="p_tabs" ref={tab} >
-      {/* <Extra  width={activeTab} className={ `same ${colorTab}`}></Extra> */}
-      
-        <p  className={`${activeTab==="all"?"p_active_btn":"p_disible_btn"}  `}  id="all" onClick={allFunc}>All</p>
-
-
-       <p className={`${activeTab==="static"?"p_active_btn":"p_disible_btn"}  `}  id="static" onClick={statFunc}>Static</p>
-
-    
-       <p  className={`${activeTab==="dynamic"?"p_active_btn":"p_disible_btn"}  `} id="dynamic" onClick={dynFunc}>Dynamic</p>
-
-    
-       <p  width={activeTab} ton  className={`${activeTab==="responsive"?"p_active_btn":"p_disible_btn"}  `} id="responsive" onClick={resFunc}>Responsive</p>
-      
-      </div>
-      
+     
      
 
      <div className='p_div'  ref={boxes}>
-        {finalData.map((item)=> <ProjectItem  classy="p_tabs"  test={activeTab} item={item} key={item.id}/>)}
+        {projectData.map((item)=> <ProjectItem    test={activeTab} item={item} key={item.id}/>)}
      </div>
     </div>
    </div>

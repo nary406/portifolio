@@ -30,8 +30,8 @@ useEffect(()=>{
 
 
   return (
-    <Profile >
-      <div className="profile-description " ref={des} >
+    <Profile  >
+      <div className="profile-description " ref={des}  >
        <div className="typewriter">
        <h1  style={{fontFamily: "julius sans one"}}>
           Hi, I'am
@@ -73,7 +73,7 @@ useEffect(()=>{
 
       </div>
       <section className="banner " >
-        <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1713083725/portifolio_image_ghyaht_b85bd9.png" alt="Avatar" style={{ zIndex: 1 }} ref={pic} />
+        <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1714981873/thumbnail_igicuu.png" alt="Avatar" style={{ zIndex: 1 }} ref={pic} />
       </section>
     </Profile>
   );

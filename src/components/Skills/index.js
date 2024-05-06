@@ -104,7 +104,7 @@ gsap.fromTo(hrr.current, {opacity:0, x:"580px",}, {x:"70px", opacity:1, ease: "s
     
   return (
 
-   <div className="skill_main"   >
+   <div className="skill_main"  id="skills_section" >
      <div className="skill_head"  > 
       <hr  ref={hrl}/> 
       <h1 style={{fontWeight:"650", marginRight:"20px",fontFamily: "julius sans one, cursive", marginLeft:"20px", position:"absolute"}} ref={element} >Skills</h1>

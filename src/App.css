@@ -6,7 +6,25 @@
 }
 
 .app_div{
- 
+ position:relative;
   background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
      
+}
+.hovr_btn button{
+  position: relative;
+ 
+  background-color: transparent;
+  border: none;
+  font-size:50px;
+  color:white;
+  top:750px;
+  position: fixed;
+  left:50px;
+}
+
+.anchor_button{
+  display:block;
+  @media(orientation:portrait){
+    display: none;
+  }
 }

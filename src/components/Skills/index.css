@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 .skill_main{
-   
+   overflow:hidden;
     height:100svh;
     text-align: center;
    
@@ -27,6 +27,7 @@ hr{
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding-top:50px;
         overflow-x:hidden;
         overflow-y:visible;
 }
@@ -66,7 +67,7 @@ hr{
 
 @media (orientation:portrait){
     .svg_pic{
-       min-width:80%;
+       width:80%;
       
        
     }
