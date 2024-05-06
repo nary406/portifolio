@@ -13,7 +13,7 @@
 .hovr_btn button{
   position: relative;
  
-  background-color:#5753C9;
+  background-color:#045799;
   border: none;
   font-size:50px;
  
@@ -41,7 +41,9 @@
   justify-content: center;
   box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
   cursor: pointer;
-  transition-duration: 0.3s;
+  transition-duration: 0.6s;
+ 
+  animation: moveUpDown 1s infinite alternate;
   overflow: hidden;
   position: relative;
 }
@@ -84,4 +86,26 @@
   bottom: unset;
   /* transform: translateY(-30px); */
   transition-duration: 0.3s;
+}
+
+
+.up {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.down {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(15px); /* Adjust the distance you want the buttons to move */
+  }
 }
