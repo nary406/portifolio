@@ -73,7 +73,7 @@ useEffect(()=>{
 
       </div>
       <section className="banner " >
-        <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1714981873/thumbnail_igicuu.png" alt="Avatar" style={{ zIndex: 1 }} ref={pic} />
+        <img src="https://res.cloudinary.com/dky72aehn/image/upload/v1715013940/thumb_2_oyjyqk_2202c3.png" alt="Avatar" style={{ zIndex: 1 }} ref={pic} />
       </section>
     </Profile>
   );
