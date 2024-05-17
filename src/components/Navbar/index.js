@@ -1,11 +1,13 @@
 import { CiMenuFries } from "react-icons/ci";
 import {Image,Btn,Button,  Nav,Imagdiv, Display}from "./styledComponents"
-import {useState} from "react"
+import {useState, useContext} from "react"
 import { RxCross2 } from "react-icons/rx";
 import "./index.css"
+import {User} from "../../App"
 
 const Header=()=> {
   const [ham, setham]=useState(false)
+  const {name, age}=useContext(User)
 
 const hamburger=()=>(
   setham(!ham)

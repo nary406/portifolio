@@ -80,3 +80,4 @@ useEffect(()=>{
 };
 
 export default Profilesection;
+// https://res.cloudinary.com/dky72aehn/image/upload/v1715045254/red_2_nvxqc8_bfb2b5.png

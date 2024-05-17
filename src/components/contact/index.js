@@ -18,9 +18,10 @@ function Contact() {
         gsap.fromTo(left.current, {x:"-900px", opacity:0 }, {x:"0px", opacity:1,duration:1, ease:"slow(0.7,0.7,false)",
         scrollTrigger:{
           start:"top 80%",
-          end:"top 50%",
+          end:"top 20%",
           scrub:3,
           trigger:left.current,
+          
           
          
         }

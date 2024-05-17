@@ -112,7 +112,7 @@
 
 .download {
   font-family: inherit;
-  font-size: 25px;
+  font-size: 20px;
   background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
   color: white;
   fill: rgb(155, 153, 153);
@@ -128,7 +128,7 @@
 
 @media (orientation:portrait){
 .download{
-  font-size: 16px;
+  font-size: 14px;
 }
 }
 .download span {
@@ -186,7 +186,7 @@
 .typewriter h1 {
   color: #045799;
   font-weight:900;
-  font-size:60px;
+  font-size:50px;
  
   align-self: flex-start;
 

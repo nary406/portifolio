@@ -2,16 +2,23 @@ import Profilesection from "./components/Profile"
 import Header from "./components/Navbar"
 import  Skills from "./components/Skills";
 import Test from "./components/test"
+
+import React, { createContext } from "react";
 import { FaCircleArrowUp } from "react-icons/fa6";
 import Projects from "./components/projects"
 import Contact from "./components/contact"
 import "./App.css"
+
+export const User=React.createContext() 
+
 const App=()=> {
+  
+ const name="nary"
+ const age="23"
   return (
    <>
-  
-
-  <div className="app_div">
+ <User.Provider value={{name, age}}>
+ <div className="app_div">
   <Header/>
   <Profilesection/>
    <Skills/>
@@ -31,6 +38,7 @@ const App=()=> {
 </div>
  </a>
   </div>
+ </User.Provider>
    
    </>
   )
