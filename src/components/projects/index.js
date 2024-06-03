@@ -160,9 +160,6 @@ gsap.fromTo(image.current, {  transform:"scale(0)",}, {transform:"scale(1)", eas
      <div className="p_main" ref={div}> 
      
 
-     
-     
-
      <div className='p_div'  ref={boxes}>
         {projectData.map((item)=> <ProjectItem    test={activeTab} item={item} key={item.id}/>)}
      </div>
