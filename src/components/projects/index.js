@@ -15,8 +15,8 @@ const projectData=[
     "id": "responsive_4",
     website:"https://company-app-lake.vercel.app/",
     type: "dynamic",
-    username:"nary",
-  password:"nary"
+    username:"pavan",
+  password:"pavan123"
   },
     {
       name: "Nxt Trends",
