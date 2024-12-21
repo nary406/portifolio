@@ -13,7 +13,7 @@ const projectData=[
     "image": "https://res.cloudinary.com/dky72aehn/image/upload/v1714321102/8810413_tk7y4a.jpg",
     "description": "TodoList: Organize tasks, manage priorities, track progress, and enhance productivity effectively.",
     "id": "responsive_4",
-    website:"https://demofrontend-delta.vercel.app/",
+    website:"https://company-app-lake.vercel.app/",
     type: "dynamic",
     username:"nary",
   password:"nary"
